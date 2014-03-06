@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!--https://graph.facebook.com/223814617784660-->
+<!--http://api.openweathermap.org/data/2.5/weather?lat=30.6835528&lon=-97.1433778-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="">
+
+    <title>Fly Apache Pass</title>
+    <!--<link rel="shortcut icon" href="/favicon.ico"  type="image/x-icon">-->
+
+    {! Customise the stylesheet for your site by editing /public/styles/site.less !}
+    {! All .less files will be automatically compiled and minified in production. !}
+
+    <link href="/styles/site.min.css" rel="stylesheet">
+
+    {! This file provides the default styling for the KeystoneJS Content Editor !}
+    {?user}
+        {#user.canAccessKeystone}
+            <link href="/keystone/styles/content/editor.min.css" rel="stylesheet">
+        {/user.canAccessKeystone}
+    {:else}
+
+    {/user}
+    
+</head>
+
+<body>
+    
+    {! Page Navigation Block Child templates can overwrite nav !}
+    {+pageNav}
+    
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Fly Apache Pass</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    {#navLinks}
+                        <li><a href={href}>{label}</a></li>
+
+                    {:else}
+                        <li></li>
+                    {/navLinks}
+                   
+                </ul>
+                <ul class="nav navbar-nav navbar-right"> 
+                    <li><a href="http://www.airnav.com/airport/4XA4" target="_blank"><button type="button" class="btn btn-sm btn-info">Airport ID: 4XA4</button></a></li>
+                </ul>
+
+                <div id="social_media">
+                    <ul class="nav navbar-nav navbar-right">            
+                       <li><a href="https://www.facebook.com/apache.pass" target="_blank" class="facebook" title="">facebook</a></li>     
+                       <li class="last"><a href="mailto:apachepass@tex1.net" class="email" title="">email</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+    {/pageNav}
+
+    {! Body content block, child templates can overwrite !}
+    {+bodyContent/}
+    
+   
+
+    {! Footer block, can be overwritten by child template !}
+    {+footer}
+    <!-- FOOTER -->
+    <div class="container">
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; HKC3 2014
+
+                </div>
+            </div>
+        </footer>
+        {?user}
+            <ul class="nav navbar-nav navbar-right">    
+                {#user.canAccessKeystone}
+                    <li><a href='/keystone'>Open Keystone</a></li>
+                    <li><a href='/keystone/signout'>Sign Out</a></li>
+                {/user.canAccessKeystone}
+            {:else}
+                <li><a href='/keystone/signin'>Sign In</a></li>
+             </ul>    
+        {/user}
+    </div>
+
+    </div>
+    <!-- /container -->
+    {/footer}
+
+
+    <!-- JavaScript -->
+    <script src="/js/lib/jquery/jquery-1.11.0.min.js"></script>
+    <script src="/js/lib/bootstrap/bootstrap-3.1.0.min.js"></script>
+    
+   
+    {?user}
+        {#user.canAccessKeystone}
+            <script src="/keystone/js/content/editor.js"></script>
+        {/user.canAccessKeystone}
+    {:else}
+
+    {/user}
+    
+    {! javaScript block !}
+    {+javascript/}
+    <!--Add scripts that are globally required by your site here.-->
+    
+        <!--Script to Activate the Carousel--> 
+            <script>
+                $('.carousel').carousel({
+                    interval: 5000
+                });
+            </script>
+        <!-- End Carousel -->    
+
+
+</body>
+
+</html>

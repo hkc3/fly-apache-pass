@@ -1,0 +1,109 @@
+{>"../layouts/default"/}
+
+
+{<bodyContent}
+
+<div class="full-width-image-1">
+
+
+        <div class="logo-wrapper box-shadow">
+            <img class="img-responsive" src="/images/ap_logo.png" />
+        </div>
+
+
+
+    </div>
+    <!-- /full-width-image-1 -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 section">
+                <h1 class="section-heading">Apache Pass Air Park</h1>
+                <p class="lead section-lead"> A fun, enjoyable, family friendly place. The Air Park is across from the Steakhouse / Icehouse. The Air Park was conceived with agriculture in mind to support our local farmers and ranchers.  It is used for this today and to host Radio Controlled regional fly-ins. We welcome spectators to come out and enjoy the events with us.
+
+                </p>
+                <p class="section-paragraph">Apache pass has lots of historical significance and the whole family will find it an enjoyable place to explore as well... Apache pass has hosted some really large events...some having upwards of 30,000 coming thru the gates.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="full-width-image-2">
+        <!-- box content goes here if you want to put text or a button in here -->
+    </div>
+    <!-- /full-width-image-2 -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 section">
+                <div id="date_container">   
+                    <div class="date">
+                        <p>22 <span>March</span></p>
+                    </div>
+                </div>
+                    <h1 class="section-heading">Come out and fly with us...</h1>
+                <p class="lead">We want to invite everyone... no matter what type of model or spectating you prefer
+                    <ul>
+                        <li>All types of aircraft welcome.</li>
+                        <li>RV Hook-ups</li>
+                        <li>Try some of the good cooking at the Apache Pass Restaurants on-site.</li>
+                    </ul>
+
+                </p>
+                
+                 
+                 <p class="lead">
+                    Our next event is the weekend of <strong>March 22, 2014</strong>. Hope to see you there
+                </p>
+                
+            </div>
+        </div>
+        <div class="row">
+         <div class="col-lg-4">
+            <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Show me the way to Apache Pass</h3>
+            </div>
+            <div class="panel-body">
+              <form action="http://maps.google.com/maps" method="get" target="_blank">
+                <p><label for="saddr">Your ZIP code: </label>&nbsp;
+                    <input type="text" name="saddr" id="saddr" value="" />&nbsp;
+                    <button type="submit" class="btn btn-xs btn-success">GO</button>
+                    <input type="hidden" name="daddr" value="Apache Pass Event Center, 9112 N. FM 908, In the community of Downtown Texas, Texas, Rockdale, TX 76567" />
+                    <input type="hidden" name="hl" value="en" /></p>
+            </form>
+            <p><strong>Apache Pass Event Center, 9112 N. FM 908, In the community of Downtown Texas, Texas, Rockdale, TX 76567</strong></p>
+            <p>Apache Pass is located 5.8 miles northeast of Thorndale, Texas, 7.5 miles northwest of Rockdale, Texas, 13.6 miles southwest of Cameron, Texas, our county seat, and 46 miles northeast of the State Capitol in Austin, Texas, on FM 908 and County Road 428 in Milam County.  Coordinates N. 30.41.350  W.097.08.306  Elevation: 375’ ASL.</p>
+            </div>
+          </div>
+          
+            
+        </div>
+   
+        
+        <div class="col-lg-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Weather</h3>
+                </div>
+                <div class="panel-body">  
+                    <span style="display: block !important; width: 320px; text-align: center; font-family: sans-serif; font-size: 12px;"><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:76567.1.99999&bannertypeclick=wu_clean2day" title="Rockdale, Texas Weather Forecast" target="_blank"><img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_cond&airportcode=KT35&ForcedCity=Rockdale&ForcedState=TX&zip=76567&language=EN" alt="Find more about Weather in Rockdale, TX" width="300" /></a></span>
+                </div>
+            </div>
+       </div>
+       <div class="col-lg-4">
+          <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Other R/C Events in TX</h3>
+                </div>
+                <div class="panel-body"> 
+                <iframe src="http://www.RCFlightDeck.com/eventSetMini.cfm?event_type_id=x0x,x32x,x34x,x7x,x5x,x22x,x19x,x46x,x6x,x18x,x31x,x20x,x8x,x9x,x10x,x33x,x11x,x12x,x14x,x4x,x17x,x13x,x35x,x15x,x3x,x21x,x1x,x2x&amp;event_State='TX'&amp;event_Country=USA&amp;affiliate_id=&amp;team_id=&amp;authority_id=" name="miniframe" id="miniframe" style="width:300px;height:390px;overflow-x: hidden;-ms-overflow-x: hidden;-ms-overflow-y: hidden;overflow-y:hidden;border:none;" frameborder="0"></iframe>
+
+                </div>
+            </div>   
+        </div>
+   </div>
+       
+     
+    </div>
+
+{/bodyContent}
